@@ -5,9 +5,9 @@
     <body>
         <p>redirecting...</p>
         <script type="text/javascript">
-            var ua = navigator.userAgent.toLowerCase();
+            var ua = navigator.userAgent;
 
-            if (ua.indexOf("nintendo") !== -1 && ua.indexOf("3ds") !== -1) {
+            if (ua.indexOf("Nintendo 3DS") != -1) {
                 location.replace("./3ds");
             } else {
                 location.replace("./non");
