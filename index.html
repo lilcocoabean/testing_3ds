@@ -5,12 +5,10 @@
     <body>
         <p>redirecting...</p>
         <script type="text/javascript">
-            var ua = navigator.userAgent;
-
-            if (ua.indexOf("Nintendo 3DS") != -1) {
-                location.replace("https://lilcocoabean26.github.io/testing_3ds/3ds");
+            if(navigator.userAgent.indexOf("Nintendo 3DS") == -1) { // If the user agent does not contain "Nintendo 3DS"
+                location.replace("./non"); // Redirect to another page
             } else {
-                location.replace("https://lilcocoabean26.github.io/testing_3ds/non");
+                location.replace("./3ds")
             }
         </script>
     </body>
