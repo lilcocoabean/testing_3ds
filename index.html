@@ -5,10 +5,12 @@
     <body>
         <p>redirecting...</p>
         <script type="text/javascript">
-            if(navigator.userAgent.indexOf("Nintendo 3DS") == -1) {
-                location.replace("./non");
+            var ua = navigator.userAgent.toLowerCase();
+
+            if (ua.indexOf("nintendo") !== -1 && ua.indexOf("3ds") !== -1) {
+                location.replace("./3ds");
             } else {
-                location.replace("./3ds")
+                location.replace("./non");
             }
         </script>
     </body>
